@@ -25,6 +25,8 @@ layout: default
 
 # Histogram
 
+# Histogram
+![]({{ site.baseurl }}/assets/Histogram.jpg)
 
 # Time-serie
 ![]({{ site.baseurl }}/assets/Time-serie graph.png)
