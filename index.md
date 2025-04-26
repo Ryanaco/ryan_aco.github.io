@@ -9,14 +9,14 @@ layout: default
 
 
 # Time-series chart
-
+{% include shooting_incidents_Time_serie.html %}
 
 
 # Radar 24 hour Radar chart
 ![]({{ site.baseurl }}/assets/Radar_plot.jpg)
 
 
-# Heatmap
+# Interactive Heatmap
 
 
 
@@ -24,6 +24,10 @@ layout: default
 
 
 # Histogram
+{% include Weather_Histogram.html %}
+
+# Heatmap
+![]({{ site.baseurl }}/assets/weather_heatmap.jpg)
 
 # Histogram
 ![]({{ site.baseurl }}/assets/Histogram.jpg)
