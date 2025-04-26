@@ -9,20 +9,33 @@ layout: default
 
 
 # Time-series chart
-{% include shooting_incidents_Time_serie.html %}
+
 
 
 # Radar 24 hour Radar chart
+![]({{ site.baseurl }}/assets/Radar_plot.jpg)
 
 
 # Heatmap
-{% include shootings_map_with_heatmap.html %}
+
 
 
 # Boxplot
 
+
 # Histogram
-{% include Weather_Histogram.html %}
+
+
+# Time-serie
+![]({{ site.baseurl }}/assets/Time-serie graph.png)
+# Correlation
+![]({{ site.baseurl }}/assets/Correlation.jpg)
+# Temperature
+![]({{ site.baseurl }}/assets/Temperature.jpg)
+
+# Cloudcover
+![]({{ site.baseurl }}/assets/Cloudcover.jpg)
+
 ## Conclusion 
 
 
