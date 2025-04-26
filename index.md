@@ -23,6 +23,7 @@ layout: default
 # Boxplot
 
 
+
 # Histogram
 {% include Weather_Histogram.html %}
 
