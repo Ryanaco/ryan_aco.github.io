@@ -27,7 +27,7 @@ layout: default
 {% include Weather_Histogram.html %}
 
 # Heatmap
-![]({{ site.baseurl }}/assets/weather_heatmap.jpg)
+![]({{ site.baseurl }}/assets/Weather_heatmap.jpg)
 
 # Histogram
 ![]({{ site.baseurl }}/assets/Histogram.jpg)
