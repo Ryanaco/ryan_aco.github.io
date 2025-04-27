@@ -11,10 +11,11 @@ layout: default
 
 
 # Histogram
-![]({{ site.baseurl }}/assets/Histogram.jpg)
+{% include Weather_Histogram.html %}
 
-# Time-serie
-<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="500px">
+
+# Histogram
+![]({{ site.baseurl }}/assets/Histogram.jpg)
 
 # Navigating NYC: Which Boroughs Pose the Biggest Risks?
 # Time-series chart
@@ -31,6 +32,9 @@ layout: default
 {% include shootings_map_with_heatmap.html %}
 
 
+
+# Time-serie
+<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="500px">
 
 # Correlation
 <img src="{{ site.baseurl }}/assets/Correlation.jpg" width="400px">
