@@ -6,8 +6,17 @@ layout: default
 
 # Introduction
 
+# Boxplot
+{% include shootings_boxplot.html %}
 
 
+# Histogram
+![]({{ site.baseurl }}/assets/Histogram.jpg)
+
+# Time-serie
+<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="500px">
+
+# Navigating NYC: Which Boroughs Pose the Biggest Risks?
 # Time-series chart
 <div style="width:800px; margin:auto;">
   {% include shooting_incidents.html %}
@@ -21,15 +30,7 @@ layout: default
 # Interactive Heatmap
 {% include shootings_map_with_heatmap.html %}
 
-# Boxplot
-{% include shootings_boxplot.html %}
 
-
-# Histogram
-![]({{ site.baseurl }}/assets/Histogram.jpg)
-
-# Time-serie
-<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="500px">
 
 # Correlation
 <img src="{{ site.baseurl }}/assets/Correlation.jpg" width="400px">
