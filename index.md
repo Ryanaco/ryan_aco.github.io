@@ -41,7 +41,7 @@ layout: default
 <img src="{{ site.baseurl }}/assets/Correlation.jpg" width="400px">
 
 # Temperature
-<img src="{{ site.baseurl }}/assets/Temperature.jpg" width="800px">
+![]({{ site.baseurl }}/assets/Temperature.jpg)
 
 # Cloudcover
 ![]({{ site.baseurl }}/assets/Cloudcover.jpg)
