@@ -26,12 +26,6 @@ layout: default
 
 
 # Histogram
-{% include Weather_Histogram.html %}
-
-# Heatmap
-![]({{ site.baseurl }}/assets/Weather_heatmap.jpg)
-
-# Histogram
 ![]({{ site.baseurl }}/assets/Histogram.jpg)
 
 # Time-serie
