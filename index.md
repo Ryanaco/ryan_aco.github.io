@@ -9,19 +9,20 @@ layout: default
 
 
 # Time-series chart
-{% include shooting_incidents_Time_serie.html %}
+<div style="width:800px; margin:auto;">
+  {% include shooting_incidents.html %}
+</div>
+
 
 
 # Radar 24 hour Radar chart
-![]({{ site.baseurl }}/assets/Radar_plot.jpg)
-
+<img src="{{ site.baseurl }}/assets/Radar_plot.jpg" width="670px">
 
 # Interactive Heatmap
-
-
+{% include shootings_map_with_heatmap.html %}
 
 # Boxplot
-
+{% include shootings_boxplot.html %}
 
 
 # Histogram
@@ -34,11 +35,13 @@ layout: default
 ![]({{ site.baseurl }}/assets/Histogram.jpg)
 
 # Time-serie
-![]({{ site.baseurl }}/assets/Time-serie graph.png)
+<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="500px">
+
 # Correlation
-![]({{ site.baseurl }}/assets/Correlation.jpg)
+<img src="{{ site.baseurl }}/assets/Correlation.jpg" width="400px">
+
 # Temperature
-![]({{ site.baseurl }}/assets/Temperature.jpg)
+<img src="{{ site.baseurl }}/assets/Temperature.jpg" width="800px">
 
 # Cloudcover
 ![]({{ site.baseurl }}/assets/Cloudcover.jpg)
