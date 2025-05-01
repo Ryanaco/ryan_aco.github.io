@@ -8,6 +8,9 @@ layout: default
 
 
 ### **Navigating NYC: Which Boroughs Pose the Biggest Risks?**
+Would you like to know the most dangerous times and areas in New York City? Let's explore. Through data visualization, we conducted an in-depth analysis of gun violence distribution across the five boroughs of New York City.
+
+We delved into the shooting incident patterns in the five boroughs, analyzing both time and location, and also uncovered the subtle influence of climate conditions behind these patterns. The different geographic environments in New York City may be quietly shaping the city's safety map. The five boroughs are widely spread geographically: The Bronx has higher elevation and is closer to inland areas, while Brooklyn and Queens stretch out toward the Atlantic coast, and Staten Island is more influenced by maritime climate. These subtle geographic differences also bring varying temperature changes, with inland areas tending to be hotter in summer and colder in winter.
 <div style="width:800px; margin:auto;">
   {% include shooting_incidents.html %}
 </div>
