@@ -20,7 +20,6 @@ We delved into the shooting incident patterns in the five boroughs, analyzing bo
 <img src="{{ site.baseurl }}/assets/Radar_plot.jpg" width="670px">
 
 {% include shootings_map_with_heatmap.html %}
-In the interactive heat map, it is clearly visible that the hot spots in the Bronx and Brooklyn are the most concentrated, while other peripheral areas appear relatively safer. Inland areas, such as the Bronx, are more prone to the "urban heat island effect" in the summer, leading to heat accumulation. On the other hand, coastal areas, like Brooklyn and Queens, experience smaller temperature fluctuations due to the regulating effect of the ocean. This phenomenon suggests that geographic location and microclimates may, to some extent, have a latent connection with criminal behavior.
 
 ### **Weather’s Impact on NYC Shootings—What Tourists Should Know**
 Before revealing the direct relationships between rain, temperature, and NYC shootings, let's set the stage with a more in-depth examination of how these trends intersect. Here we compare monthly shooting trends with weather trends such as temperature, rainfall, and cloud cover. These charts reveal seasonal highs and the possible impact of weather, setting the stage for examining more closely how climate can help predict safer periods for your NYC trip.
