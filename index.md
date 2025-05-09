@@ -25,16 +25,15 @@ layout: default
 Before revealing the direct relationships between rain, temperature, and NYC shootings, let's set the stage with a more in-depth examination of how these trends intersect. Here we compare monthly shooting trends with weather trends such as temperature, rainfall, and cloud cover. These charts reveal seasonal highs and the possible impact of weather, setting the stage for examining more closely how climate can help predict safer periods for your NYC trip.
 
 NYC’s weather can set the tone for your trip, but it might also hint at safety trends. Below, use our interactive histogram to explore how temperature, rainfall, and cloud cover vary across the months. Toggle the dropdown to see how each factor changes and plan your visit accordingly.
-<iframe src="{{ site.baseurl }}/assets/interactive_weather_plots.html" width="100%" height="560" style="border:none;"></iframe>
+<iframe src="{{ site.baseurl }}/assets/interactive_weather_plots.html" width="100%" height="580" style="border:none;"></iframe>
 The histogram illustrates the seasonal weather conditions of NYC: temperatures are highest in July and August, at an average of about 25°C, and lowest in January and February, below 5°C. Rainfall, however, is most pronounced in April, at an average of 0.15 mm, and has a secondary peak in July, while in February it is lowest at 0.09 mm. Cloud cover (not illustrated but presumed) would probably have the same trend, higher in wetter months. These trends suggest warmer months could mean more street activity—and possibly tension—although wet periods can influence how often people are outdoors. 
 
 Now that we've viewed how NYC weather varies, let's consider the other side of the equation: shooting incidents. The following boxplot divides per-day shooting incidents by month from 2016 to 2022, showing the city's most dangerous periods. Hover over each month to view the dispersion and plan the safest times for your visit.
 
-<iframe src="{{ site.baseurl }}/assets/shootings_boxplot.html" width="100%" height="550" style="border:none;"></iframe>
+<iframe src="{{ site.baseurl }}/assets/shootings_boxplot.html" width="105%" height="600" style="border:none;"></iframe>
 The boxplot reveals a definite pattern in the shooting trends in NYC. The summer months of June, July, and August are the worst. June has a median of 4 shootings per day, which can go up to 22 on its worst day. July and August are close behind with medians between 4 and 5, and some days in excess of 20. In winter months like January and February, though, it's preferable with medians around 3 and fewer really high days. Let's take June to see its figures—25% of days (Q3) experience a minimum of 8 shootings, a definite signal to avoid the busiest summer days. For a safer trip, choose cooler months like February when the chances of a hot day are greatly diminished.
 
 Now that we’ve seen how shootings spike in certain months, let’s explore how weather might play a role. The histograms below compare monthly shooting incidents with average temperature and rainfall
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,7 +45,7 @@ Now that we’ve seen how shootings spike in certain months, let’s explore how
             justify-content: space-between; /* Optional: Adds space between the images */
         }
         .image-container img {
-            width: 45%; /* Adjust the width of each image (you can change the percentage as needed) */
+            width: 50%; /* Adjust the width of each image (you can change the percentage as needed) */
             height: auto; /* Maintain aspect ratio */
         }
     </style>
