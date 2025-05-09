@@ -41,13 +41,14 @@ In conclusion, the seasonal patterns observed suggest that weather variables suc
 
 ### **Title for this section**
 
-<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="500px">
+<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="100%" height="100%">
 
-<img src="{{ site.baseurl }}/assets/Correlation.jpg" width="400px">
+<iframe src="{{ site.baseurl }}/assets/correlation_heatmap.html" width="100%" height="600" style="border:none;"></iframe>
 
-![]({{ site.baseurl }}/assets/Temperature.jpg)
 
-![]({{ site.baseurl }}/assets/Cloudcover.jpg)
+![]({{ site.baseurl }}/assets//temperature_rr_plot_with_rr1_line.png)
+
+![]({{ site.baseurl }}/assets/cloudcover_rr_plot_with_rr1_line.png)
 
 ### Conclusion 
 
