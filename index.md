@@ -8,9 +8,6 @@ layout: default
 
 
 ### **Navigating NYC: Which Boroughs Pose the Biggest Risks?**
-Would you like to know the most dangerous times and areas in New York City? Let's explore. Through data visualization, we conducted an in-depth analysis of gun violence distribution across the five boroughs of New York City.
-
-We delved into the shooting incident patterns in the five boroughs, analyzing both time and location, and also uncovered the subtle influence of climate conditions behind these patterns. The different geographic environments in New York City may be quietly shaping the city's safety map. The five boroughs are widely spread geographically: The Bronx has higher elevation and is closer to inland areas, while Brooklyn and Queens stretch out toward the Atlantic coast, and Staten Island is more influenced by maritime climate. These subtle geographic differences also bring varying temperature changes, with inland areas tending to be hotter in summer and colder in winter.
 <div style="width:800px; margin:auto;">
   {% include shooting_incidents.html %}
 </div>
@@ -19,7 +16,11 @@ We delved into the shooting incident patterns in the five boroughs, analyzing bo
 
 <img src="{{ site.baseurl }}/assets/Radar_plot.jpg" width="670px">
 
-{% include shootings_map_with_heatmap.html %}
+<iframe src="/assets/shootings_map_with_heatmap.html" width="100%" height="700" style="border:none;"></iframe>
+
+
+
+
 
 ### **Weather’s Impact on NYC Shootings—What Tourists Should Know**
 Before revealing the direct relationships between rain, temperature, and NYC shootings, let's set the stage with a more in-depth examination of how these trends intersect. Here we compare monthly shooting trends with weather trends such as temperature, rainfall, and cloud cover. These charts reveal seasonal highs and the possible impact of weather, setting the stage for examining more closely how climate can help predict safer periods for your NYC trip.
