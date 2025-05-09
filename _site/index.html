@@ -75,8 +75,34 @@
 <p>The boxplot reveals a definite pattern in the shooting trends in NYC. The summer months of June, July, and August are the worst. June has a median of 4 shootings per day, which can go up to 22 on its worst day. July and August are close behind with medians between 4 and 5, and some days in excess of 20. In winter months like January and February, though, it’s preferable with medians around 3 and fewer really high days. Let’s take June to see its figures—25% of days (Q3) experience a minimum of 8 shootings, a definite signal to avoid the busiest summer days. For a safer trip, choose cooler months like February when the chances of a hot day are greatly diminished.</p>
 
 <p>Now that we’ve seen how shootings spike in certain months, let’s explore how weather might play a role. The histograms below compare monthly shooting incidents with average temperature and rainfall
-<img src="/assets/Histogram.jpg" alt="" />
-These histograms shows a noticeable relationship between crime and climate in NYC. The histogram on the right shows that incidents peak in July, with shooting incidents exceeding 1200, which is consistent with the average temperature for July, which peaks at about 26°C, and then decreases to an average of about 3°C for January. This suggests that increased street activity—and probably increased tension—when the temperatures are hot leads to a significant rise in shooting incidents. The histogram on the left shows that precipitation differs where July with a little bit of rainfall with about 0.17 mm and October is rated second with closer to 0.16 mm, and with February the lowest at around 0.10 mm. It is interesting that shooting incidents are lower where the temperatures are cooler, and there is somewhat more rainfall. Both warmer temperatures and precipitation have an effect where rain means people might not want to be outside, thus reducing the chances of shooting incidents.</p>
+&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Side by Side</title>
+    <style>
+        .image-container {
+            display: flex; /* This will display the images side by side */
+            justify-content: space-between; /* Optional: Adds space between the images */
+        }
+        .image-container img {
+            width: 45%; /* Adjust the width of each image (you can change the percentage as needed) */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="assets/temp.png" alt="Image 1" />
+        <img src="assets/rain.png" alt="Image 2" />
+    </div>
+
+</body>
+</html>
+
+<p>These histograms shows a noticeable relationship between crime and climate in NYC. The histogram on the right shows that incidents peak in July, with shooting incidents exceeding 1200, which is consistent with the average temperature for July, which peaks at about 26°C, and then decreases to an average of about 3°C for January. This suggests that increased street activity—and probably increased tension—when the temperatures are hot leads to a significant rise in shooting incidents. The histogram on the left shows that precipitation differs where July with a little bit of rainfall with about 0.17 mm and October is rated second with closer to 0.16 mm, and with February the lowest at around 0.10 mm. It is interesting that shooting incidents are lower where the temperatures are cooler, and there is somewhat more rainfall. Both warmer temperatures and precipitation have an effect where rain means people might not want to be outside, thus reducing the chances of shooting incidents.</p>
 
 <p>In conclusion, the seasonal patterns observed suggest that weather variables such as temperature and precipitation may be related to the number of shootings in New York City. However, in order to clearly move beyond visual implications and determine the strength of these relationships, we must statistically measure them. In the next section we will look into the actual correlations between weather variables and the shooting incidents to demonstrate just how related climate conditions are between heat and crime.</p>
 
