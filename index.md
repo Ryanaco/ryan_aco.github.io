@@ -15,7 +15,7 @@ layout: default
 
 <img src="{{ site.baseurl }}/assets/Radar_plot.jpg" width="100%" height="100%">
 
-### 经典的filter显示 1KM以内的incidents
+### 景点的filter显示 1KM以内的incidents
 <iframe src="{{ site.baseurl }}/assets/nyc_landmark_filter_map.html" width="100%" height="700" style="border:none;"></iframe>
 
 
