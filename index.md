@@ -9,18 +9,21 @@ New York City, a global hub of culture, commerce, and tourism, attracts millions
 
 ### **Navigating NYC: Which Boroughs Pose the Biggest Risks?**
 For tourists planning a trip to New York City, understanding where and when shooting incidents occur can enhance safety. This interactive line chart explores shooting incidents across the five boroughs—Bronx, Brooklyn, Queens, Manhattan, and Staten Island—from 2016 to 2022, offering a toggleable view by month or year. By analyzing temporal patterns, tourists can identify safer times to visit popular destinations.
-<figure style="text-align: center;">
-  <iframe src="{{ site.baseurl }}/assets/shooting_incidents.html" width="100%" height="600" style="border:none;"></iframe>
-  <figcaption><strong>Figure 1:</strong> Interactive line chart showing shooting incidents by year or month (filter), with separate lines for each NYC borough (Bronx, Brooklyn, Queens, Manhattan, Staten Island) from 2016 to 2022.</figcaption>
-</figure>
+
+<div style="max-width: 960px; margin: 0 auto;">
+  <iframe src="{{ site.baseurl }}/assets/shooting_incidents.html" width="100%" height="580" style="border:none; display: block;"></iframe>
+  <figcaption style="text-align: center;"><strong>Figure 1:</strong> Interactive line chart showing shooting incidents by year or month (filter), with separate lines for each NYC borough (Bronx, Brooklyn, Queens, Manhattan, Staten Island) from 2016 to 2022.</figcaption>
+</div>
+
 This chart unveils critical safety insights for tourists navigating NYC. By month, Brooklyn stands out with a striking peak of over 500 incidents in July, reflecting a summer surge likely fueled by heat and increased urban activity, while Staten Island remains a safer haven with fewer than 100 incidents year-round. The year view highlights a dramatic 2020 spike, with Brooklyn reaching 800 incidents and the Bronx 600, a trend possibly linked to the COVID-19 pandemic and social unrest. Queens and Manhattan follow with peaks of 400 and 300 incidents, respectively, showing moderate risk, whereas Staten Island’s stable low (under 100) suggests minimal threat. The summer peak (June–August) across boroughs, especially in Brooklyn and the Bronx, hints at a correlation with heat stress and socioeconomic pressures, an inference supported by a 2018 *Journal of Environmental Psychology* study linking temperature to heightened aggression [[1]](#1). Additionally, the 2020 anomaly may reflect disrupted social structures, a pattern echoed in a 2021 *American Journal of Public Health* analysis of crime during pandemics [[2]](#2). For tourists, this suggests avoiding Brooklyn and the Bronx in summer or during crises, opting instead for Staten Island or winter months (e.g., January, with incidents dropping below 200) when risks are lower.
 
 Our next visualization examines where these robberies most frequently occur, complementing the temporal analysis with crucial spatial information. This radar chart reveals hourly patterns of shooting incidents across the five boroughs—Bronx, Brooklyn, Queens, Manhattan, and Staten Island—from 2016 to 2022, helping visitors avoid high-risk times.
 
-<figure style="text-align: center;">
+<div style="max-width: 960px; margin: 0 auto;">
   <img src="{{ site.baseurl }}/assets/Radar_plot.jpg" width="100%" height="100%" style="max-width: 100%; height: auto;">
-  <figcaption><strong>Figure 2:</strong> Radar chart displaying hourly shooting incidents across NYC boroughs (Bronx, Brooklyn, Queens, Manhattan, Staten Island), with each plot showing the distribution of incidents by hour (0–23) to highlight daily patterns.</figcaption>
-</figure>
+  <figcaption style="text-align: center;"><strong>Figure 2:</strong> Radar chart displaying hourly shooting incidents across NYC boroughs (Bronx, Brooklyn, Queens, Manhattan, Staten Island), with each plot showing the distribution of incidents by hour (0–23) to highlight daily patterns.</figcaption>
+</div>
+
 
 
 This radar chart provides a clear picture of hourly risk levels for tourists in NYC. Across all boroughs, incidents peak between 2:00 PM and 2:00 AM, with Brooklyn showing the highest concentration, exceeding 200 incidents around 8:00 PM, likely due to increased evening activity and diminished natural light. The Bronx follows a similar pattern, peaking at over 150 incidents, while Queens, Manhattan, and Staten Island report lower peaks (around 100, 80, and 20 incidents, respectively). The late-night period from midnight to 2:00 AM maintains surprisingly high rates, with Brooklyn and the Bronx still averaging 150 incidents, suggesting nightlife and reduced visibility contribute to risk. This aligns with a 2020 *Scientific Reports* study noting that crime often peaks during hours tied to routine activities, such as evening socializing, when guardianship may be lower [[3]](#3).
@@ -29,10 +32,11 @@ Conversely, early morning hours (5:00 AM–7:00 AM) show a significant drop to b
 
 Building on our earlier analysis of when shootings occur, we now turn to where they happen with a heatmap that visualizes the spatial distribution of incidents across NYC from 2016 to 2022. By applying a 1km radius around major tourist landmarks, the map reveals meaningful variations in safety across the city’s most visited sites—highlighting that even iconic destinations may differ significantly in risk.
 
-<figure style="text-align: center;">
-<iframe src="{{ site.baseurl }}/assets/nyc_landmark_filter_map.html" width="100%" height="600" style="border:none;"></iframe>
-<figcaption><strong>Figure 3:</strong> Heatmap of shooting incidents in the NYC area, with intensity reflecting incident counts, overlaid on a map with a filter for the 10 most attractive tourist locations, and seasonal case totals for the period 2016–2022.</figcaption>
-</figure>
+
+<div style="max-width: 960px; margin: 0 auto;">
+  <iframe src="{{ site.baseurl }}/assets/nyc_landmark_filter_map.html" width="100%" height="580" style="border:none; display: block;"></iframe>
+  <figcaption style="text-align: center;"><strong>Figure 3:</strong> Heatmap of shooting incidents in the NYC area, with intensity reflecting incident counts, overlaid on a map with a filter for the 10 most attractive tourist locations, and seasonal case totals for the period 2016–2022.</figcaption>
+</div>
 
 The Empire State Building (49 incidents) and Times Square (47 incidents) emerge as the most dangerous areas, likely driven by their heavy tourist crowds and urban density, creating opportunities for crime. Likewise, Grand Central Terminal (26 incidents) and Rockefeller Center (30 incidents) exhibit notable risks, given their roles as busy transit and leisure hubs. The Brooklyn Bridge (18 incidents) and The High Line (14 incidents) present moderate risks, while Central Park (4 incidents), The Met (2 incidents), and the Statue of Liberty (0 incidents) appear safer, possibly due to open spaces, lower congestion, and enhanced security measures like increased patrols or surveillance.
 
@@ -67,13 +71,13 @@ The boxplot delineates the distribution of daily shooting incidents across month
 
 Having identified the monthly variations in shooting incidents, let’s now examine how these trends align with temperature patterns over the same period. The following dual-axis chart combines monthly shooting incidents with average temperatures from 2016 to 2022, offering a clearer view of how weather conditions might influence safety risks and helping tourists pinpoint the safest times to explore NYC.
 
-<div style="display: flex; gap: 20px; text-align: center;">
-  <div>
-    <img src="assets/temp.png" width="100%">
+<div style="max-width: 960px; margin: 0 auto; display: flex; gap: 20px; justify-content: center;">
+  <div style="flex: 1; text-align: center;">
+    <img src="assets/temp.png" width="100%" style="max-width: 100%; height: auto;">
     <div><strong>Figure 6:</strong> Dual-axis histogram showing monthly shooting incidents in NYC (bars) alongside average temperature (line) from 2016–2022, revealing patterns like higher incidents in warmer months.</div>
   </div>
-  <div>
-    <img src="assets/rain.png" width="100%">
+  <div style="flex: 1; text-align: center;">
+    <img src="assets/rain.png" width="100%" style="max-width: 100%; height: auto;">
     <div><strong>Figure 7:</strong> Dual-axis histogram displaying monthly shooting incidents in NYC (bars) with average rainfall (line) from 2016–2022, highlighting trends such as fewer incidents during high-rainfall months.</div>
   </div>
 </div>
@@ -98,10 +102,11 @@ The time series chart shows a striking alignment between shooting incidents and 
 
 To quantify the strength of this observed relationship and explore other weather factors, let’s turn to a correlation matrix heatmap that measures the statistical associations between shootings, temperature, rainfall, and cloud cover.
 
-<figure style="text-align: center;">
-<iframe src="{{ site.baseurl }}/assets/correlation_heatmap.html" width="100%" height="600" style="border:none;"></iframe>
-  <figcaption><strong>Figure 9:</strong> Correlation matrix heatmap of NYC shooting incidents with weather variables (temperature, rain, cloud cover) from 2016–2022, showing weak positive correlation between incidents and temperature (0.3) and negligible correlations with rain and cloud cover.</figcaption>
-</figure>
+<div style="max-width: 960px; margin: 0 auto;">
+  <iframe src="{{ site.baseurl }}/assets/correlation_heatmap.html" width="100%" height="600" style="border:none; display: block;"></iframe>
+  <figcaption style="text-align: center;"><strong>Figure 9:</strong> Correlation matrix heatmap of NYC shooting incidents with weather variables (temperature, rain, cloud cover) from 2016–2022, showing weak positive correlation between incidents and temperature (0.3) and negligible correlations with rain and cloud cover.</figcaption>
+</div>
+
 The correlation matrix heatmap confirms a strong positive correlation between temperature and shooting incidents, with a coefficient of 0.78, reinforcing the time series observation that warmer months see more shootings. Rainfall and shootings show a weaker positive correlation at 0.12, suggesting that while wetter months like April (0.15 mm) may slightly increase incidents, the effect is minimal compared to temperature. Cloud cover and shootings have a near-zero correlation (0.05), indicating little direct influence, though cloud cover correlates moderately with rainfall (0.45), as expected in wetter months. Interestingly, temperature and rainfall show a slight negative correlation (-0.15), reflecting that peak rainfall months (e.g., April) don’t align with peak temperature months (e.g., July). These findings suggest temperature is the dominant weather driver of shootings, a pattern consistent with prior analyses showing July’s 1,200+ incidents at 26°C, while rainfall and cloud cover play secondary roles.
 
 Having established temperature as a key factor, let’s explore its distribution across months and years through a grid of histograms to understand how its variability might influence shooting trends.
