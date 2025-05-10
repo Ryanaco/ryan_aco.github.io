@@ -30,7 +30,7 @@ Conversely, early morning hours (5:00 AM–7:00 AM) show a significant drop to b
 Building on our earlier analysis of when shootings occur, we now turn to where they happen with a heatmap that visualizes the spatial distribution of incidents across NYC from 2016 to 2022. By applying a 1km radius around major tourist landmarks, the map reveals meaningful variations in safety across the city’s most visited sites—highlighting that even iconic destinations may differ significantly in risk.
 
 <figure style="text-align: center;">
-<iframe src="{{ site.baseurl }}/assets/nyc_landmark_filter_map.html" width="100%" height="700" style="border:none;"></iframe>
+<iframe src="{{ site.baseurl }}/assets/nyc_landmark_filter_map.html" width="100%" height="600" style="border:none;"></iframe>
 <figcaption><strong>Figure 3:</strong> Heatmap of shooting incidents in the NYC area, with intensity reflecting incident counts, overlaid on a map with a filter for the 10 most attractive tourist locations, and seasonal case totals for the period 2016–2022.</figcaption>
 </figure>
 
@@ -48,19 +48,20 @@ Before revealing the direct relationships between rain, temperature, and NYC sho
 
 Below, use our interactive histogram to explore how temperature, rainfall, and cloud cover vary across the months, followed by a boxplot to assess monthly shooting risks. Toggle the dropdown to see how each factor changes and plan your visit accordingly.
 
-<figure style="text-align: center;">
-<iframe src="{{ site.baseurl }}/assets/interactive_weather_plots.html" width="107%" height="580" style="border:none;"></iframe>
-<figcaption><strong>Figure 4:</strong> Histogram displaying average weather conditions by month (e.g., temperature shown with a filter option for rain or cloud cover), highlighting seasonal variations from 2016–2022.</figcaption>
-</figure>
+<div style="max-width: 960px; margin: 0 auto;">
+  <iframe src="{{ site.baseurl }}/assets/interactive_weather_plots.html" width="100%" height="580" style="border:none; display: block;"></iframe>
+  <figcaption style="text-align: center;"><strong>Figure 4:</strong> Histogram displaying average weather conditions by month (e.g., temperature shown with a filter option for rain or cloud cover), highlighting seasonal variations from 2016–2022.</figcaption>
+</div>
+
 
 The histogram illustrates NYC’s seasonal weather dynamics from 2016 to 2022: temperatures peak in July and August at approximately 25°C, dropping to below 5°C in January and February. Rainfall reaches its highest average of 0.15 mm in April, with a secondary peak in July, and dips to 0.09 mm in February. Cloud cover, though not directly shown, is presumed to follow a similar trend, increasing during wetter months like April and July. These patterns suggest warmer months may heighten street activity and tension, potentially increasing crime risks, while wetter periods like April could deter outdoor presence, possibly lowering some incident rates.
 
 Now that we've viewed how NYC weather varies, let's consider the other side of the equation: shooting incidents. The following boxplot divides per-day shooting incidents by month from 2016 to 2022, showing the city's most dangerous periods. Hover over each month to view the dispersion and plan the safest times for your visit.
 
-<figure style="text-align: center;">
-<iframe src="{{ site.baseurl }}/assets/shootings_boxplot.html" width="105%" height="600" style="border:none;"></iframe>
-<figcaption><strong>Figure 5:</strong> Interactive Boxplot illustrating the distribution of daily shooting incidents in NYC by month from 2016–2022, highlighting seasonal trends with higher median incidents in summer months and lower in winter.</figcaption>
-</figure>
+<div style="max-width: 960px; margin: 0 auto;">
+  <iframe src="{{ site.baseurl }}/assets/shootings_boxplot.html" width="100%" height="510" style="border:none; display: block;"></iframe>
+  <figcaption style="text-align: center;"><strong>Figure 5:</strong> Interactive Boxplot illustrating the distribution of daily shooting incidents in NYC by month from 2016–2022, highlighting seasonal trends with higher median incidents in summer months and lower in winter.</figcaption>
+</div>
 
 The boxplot delineates the distribution of daily shooting incidents across months from 2016 to 2022, providing a clear picture of NYC’s most dangerous periods. July stands out with the highest maximum (29 incidents), a median of 5, and an upper fence at 14, indicating significant variability and a peak risk, tied to the warmest temperatures (~25°C) and increased social activity. August follows with a similar median of 4 and upper outliers reaching 25 incidents, reinforcing summer as a high-risk season. April shows a notable spread with a median of 3 and outliers up to 21, possibly influenced by its peak rainfall (0.15 mm) and spring activity. In contrast, winter months like January and February exhibit lower medians (around 2–3) and tighter ranges, reflecting reduced incidents in colder, less active conditions (below 5°C). This suggests a strong correlation between warmer weather and elevated crime, supported by a 2020 Weather, Climate, and Society study linking temperature to urban crime spikes [[1]](#1). Tourists can leverage these insights to avoid peak-risk months like July and August, opting for safer winter visits when incident rates are lower.
 
@@ -86,10 +87,13 @@ In conclusion, the seasonal patterns observed suggest that weather variables suc
 Following our exploration of seasonal and spatial patterns, this section delves into the statistical relationships between weather variables—temperature, rainfall, and cloud cover—and shooting incidents in NYC from 2016 to 2022. Through a series of visualizations, including time series, correlation heatmaps, and distribution grids, we aim to quantify the weather-crime connection, providing tourists with data-driven insights to plan safer visits.
 
 We begin with a standardized time series chart that tracks shooting incidents and temperature trends over the 7-year period, highlighting how these variables fluctuate in tandem across months and years.
-<figure style="text-align: center;">
-<img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="100%" height="100%">
-  <figcaption><strong>Figure 8:</strong> Standardized time series plot of shooting incidents (purple) and temperature (orange) in NYC from 2016–2022, showing synchronized peaks in summer months (e.g., July) and troughs in winter (e.g., January).</figcaption>
-</figure>
+<div style="max-width: 960px; margin: 0 auto;">
+  <img src="{{ site.baseurl }}/assets/Time-serie graph.png" width="100%" height="auto" style="display: block; margin: 0 auto;">
+  <figcaption style="text-align: center;">
+    <strong>Figure 8:</strong> Standardized time series plot of shooting incidents (purple) and temperature (orange) in NYC from 2016–2022, showing synchronized peaks in summer months (e.g., July) and troughs in winter (e.g., January).
+  </figcaption>
+</div>
+
 The time series chart shows a striking alignment between shooting incidents and temperature from 2016 to 2022. Both variables peak around mid-year, particularly in July, where shootings reach a standardized value of approximately 1.5 (corresponding to over 1,200 incidents, as seen in prior charts) and temperature hits a standardized peak near 1.2 (around 26°C). Conversely, both dip in winter months like January, with shootings dropping to a standardized value of -1.0 (fewer than 400 incidents) and temperature falling to -1.2 (around 3°C). This pattern, consistent across years, suggests a strong positive correlation between warmer temperatures and increased shootings, likely due to heightened street activity and heat-induced tension, a finding supported by a 2018 Journal of Environmental Psychology study linking temperature to aggression [1]. The 2020 spike in shootings, slightly decoupled from temperature, aligns with prior observations of social unrest during the COVID-19 pandemic.
 
 To quantify the strength of this observed relationship and explore other weather factors, let’s turn to a correlation matrix heatmap that measures the statistical associations between shootings, temperature, rainfall, and cloud cover.
@@ -102,18 +106,26 @@ The correlation matrix heatmap confirms a strong positive correlation between te
 
 Having established temperature as a key factor, let’s explore its distribution across months and years through a grid of histograms to understand how its variability might influence shooting trends.
 
-<figure style="text-align: center;">
-<img src="{{ site.baseurl }}/assets/temperature_rr_plot_with_rr1_line.png" width="100%" height="100%">
-  <figcaption><strong>Figure 10:</strong> Grid of histograms showing temperature distributions across NYC boroughs (Bronx, Brooklyn, Manhattan, Staten Island, Queens) from 2016–2022, with relative risk (RR) curves and 95% confidence intervals overlaid to assess the impact of temperature on shooting incidents.</figcaption>
-</figure>
+<div style="max-width: 960px; margin: 0 auto;">
+  <img src="{{ site.baseurl }}/assets/temperature_rr_plot_with_rr1_line.png" 
+       style="width: 100%; height: auto; display: block;" alt="Temperature RR Plot">
+  <p style="text-align: center; margin-top: 8px;">
+    <strong>Figure 10:</strong> Grid of histograms showing temperature distributions across NYC boroughs (Bronx, Brooklyn, Manhattan, Staten Island, Queens) from 2016–2022, with relative risk (RR) curves and 95% confidence intervals overlaid to assess the impact of temperature on shooting incidents.
+  </p>
+</div>
+
 The histogram grid confirms a strong positive correlation between temperature and shooting incidents, with relative risk (RR) rising above 1.5 in Manhattan and 1.4–1.5 in Brooklyn and Queens at temperatures over 20°C, aligning with the project’s 0.78 coefficient. This reinforces the time series observation that warmer months, like summer with 3,439 incidents, see more shootings. Rainfall and shootings show no direct RR trend here, but prior data suggest a weaker positive correlation (0.12), indicating minimal impact from wetter months like April. Cloud cover and shootings have no clear RR pattern in this figure, consistent with a near-zero correlation (0.05), though its influence is explored in Figure 11. Temperature distributions across boroughs peak at 15–20°C, with broader ranges in Manhattan and Brooklyn due to urban heat, supporting the dominant role of heat. These findings suggest temperature is the primary weather driver of shootings, a pattern consistent with prior analyses showing July’s 1,200+ incidents at 26°C, while rainfall and cloud cover play secondary roles.
 
 While temperature distributions highlight its significant role, cloud cover’s minimal correlation with shootings prompts a closer look. Let’s examine its distribution across months and years to assess any indirect effects on crime.
 
-<figure style="text-align: center;">
-<img src="{{ site.baseurl }}/assets/cloudcover_rr_plot_with_rr1_line.png" width="100%" height="100%">
-  <figcaption><strong>Figure 11:</strong> Grid of histograms displaying cloud cover distributions across NYC boroughs (Bronx, Brooklyn, Manhattan, Staten Island, Queens) from 2016–2022, with relative risk (RR) curves and 95% confidence intervals overlaid to evaluate the influence of cloud cover on shooting incidents.</figcaption>
-</figure>
+<div style="max-width: 960px; margin: 0 auto;">
+  <img src="{{ site.baseurl }}/assets/cloudcover_rr_plot_with_rr1_line.png" 
+       style="width: 100%; height: auto; display: block;" alt="Cloud Cover RR Plot">
+  <p style="text-align: center; margin-top: 8px;">
+    <strong>Figure 11:</strong> Grid of histograms displaying cloud cover distributions across NYC boroughs (Bronx, Brooklyn, Manhattan, Staten Island, Queens) from 2016–2022, with relative risk (RR) curves and 95% confidence intervals overlaid to evaluate the influence of cloud cover on shooting incidents.
+  </p>
+</div>
+
 The histogram grid indicates a modest increase in relative risk (RR) for shooting incidents at 40–60% cloud cover, peaking at ~1.4 in Manhattan and ~1.3–1.4 in Brooklyn and the Bronx, suggesting partly cloudy days slightly elevate risk. This aligns with the project’s near-zero correlation (0.05) between cloud cover and shootings, reinforced by the time series showing summer’s 3,439 incidents under variable cloud conditions. Rainfall and shootings show no direct RR trend here, but a weak positive correlation (0.12) from prior data suggests minimal influence, with wetter months like April (0.15 mm) having little effect. Cloud cover correlates moderately with rainfall (0.45), as expected in wetter months, but its impact on shootings remains secondary. Temperature and cloud cover show no clear interaction, though temperature dominates with its 0.78 correlation. These findings suggest cloud cover plays a minor role, consistent with prior analyses of July’s 1,200+ incidents driven by heat rather than weather variability.
 
 ### Conclusion 
