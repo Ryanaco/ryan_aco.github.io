@@ -4,7 +4,7 @@ layout: default
 
 # **Is NYC Safe for Your Trip? Shootings, Weather, and What to Know**
 
->write an introduction
+New York City, a global hub of culture, commerce, and tourism, attracts millions of visitors annually to iconic landmarks like the Empire State Building, Times Square, and Central Park. However, beneath its vibrant allure lies a persistent challenge: crime, particularly shooting incidents, which pose safety concerns for tourists. From 2016 to 2022, NYC recorded 9,540 shooting cases, with spatial and temporal patterns revealing heightened risks in certain areas and seasons. This project investigates the interplay between weather conditions—temperature, rainfall, and cloud cover—and shooting incidents, aiming to uncover statistical insights that empower tourists to plan safer visits. Leveraging a comprehensive dataset of crime records, weather data, and geographic information, we employ visualizations like heatmaps, time series, and distribution grids to explore seasonal trends, spatial hotspots , and weather-crime correlations. Supported by external sources, including a 2018 Journal of Environmental Psychology study on temperature and aggression, and recent news reports of incidents in high-traffic areas, our analysis provides actionable recommendations for tourists. By identifying safer locations like the Statue of Liberty and optimal travel seasons like winter , this study equips visitors with data-driven strategies to navigate NYC more securely, enhancing their experience in this dynamic city.
 
 
 ### **Navigating NYC: Which Boroughs Pose the Biggest Risks?**
