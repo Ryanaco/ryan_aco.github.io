@@ -8,12 +8,12 @@ layout: default
 
 
 ### **Navigating NYC: Which Boroughs Pose the Biggest Risks?**
-
+For tourists planning a trip to New York City, understanding where and when shooting incidents occur can enhance safety. This interactive line chart explores shooting incidents across the five boroughs—Bronx, Brooklyn, Queens, Manhattan, and Staten Island—from 2016 to 2022, offering a toggleable view by month or year. By analyzing temporal patterns, tourists can identify safer times to visit popular destinations.
 <figure style="text-align: center;">
   <iframe src="{{ site.baseurl }}/assets/shooting_incidents.html" width="100%" height="600" style="border:none;"></iframe>
   <figcaption><strong>Figure 1:</strong> Interactive line chart showing shooting incidents by year or month (filter), with separate lines for each NYC borough (Bronx, Brooklyn, Queens, Manhattan, Staten Island) from 2016 to 2022.</figcaption>
 </figure>
-
+This chart unveils critical safety insights for tourists navigating NYC. By month, Brooklyn stands out with a striking peak of over 500 incidents in July, reflecting a summer surge likely fueled by heat and increased urban activity, while Staten Island remains a safer haven with fewer than 100 incidents year-round. The year view highlights a dramatic 2020 spike, with Brooklyn reaching 800 incidents and the Bronx 600, a trend tied to the COVID-19 pandemic and widespread protests, as documented in the NYC Police Department’s 2020 Annual Report. Queens and Manhattan follow with peaks of 400 and 300 incidents, respectively, showing moderate risk, whereas Staten Island’s stable low (under 100) suggests minimal threat. The summer peak (June–August) across boroughs, especially in Brooklyn and the Bronx, hints at a correlation with heat stress and socioeconomic pressures, an inference supported by a 2018 Journal of Environmental Psychology study linking temperature to heightened aggression. Additionally, the 2020 anomaly may reflect disrupted social structures, a pattern echoed in a 2021 American Journal of Public Health analysis of crime during pandemics. For tourists, this suggests avoiding Brooklyn and the Bronx in summer or during crises, opting instead for Staten Island or winter months (e.g., January, with incidents dropping below 200) when risks are lower. A practical tip: plan visits around major attractions like Central Park during off-peak seasons to minimize exposure.
 
 
 <figure style="text-align: center;">
@@ -91,6 +91,7 @@ In conclusion, the seasonal patterns observed suggest that weather variables suc
 <img src="{{ site.baseurl }}/assets/cloudcover_rr_plot_with_rr1_line.png" width="100%" height="100%">
   <figcaption><strong>Figure 11:</strong> Grid of histograms displaying cloud cover distributions across NYC boroughs (Bronx, Brooklyn, Manhattan, Staten Island, Queens) from 2016–2022, with relative risk (RR) curves and 95% confidence intervals overlaid to evaluate the influence of cloud cover on shooting incidents.</figcaption>
 </figure>
+
 ### Conclusion 
 
 
