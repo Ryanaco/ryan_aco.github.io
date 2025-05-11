@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+    <link rel="stylesheet" href="{{'/assets/css/header.css}}">
+    <style>
+
+/**
+ * Site header
+ */
+.site-header {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  line-height: 1.5 * 16 * 2.25;
+  background-color: #ffffff;
+  border-top: 5px solid #818181;
+  border-bottom: 1px solid #818181;
+}
+.site-header .wrapper {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 40px
+}
+.site-header .wrapper .site-title 
+ {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 47px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    color: black;
+    font-size: 23px
+}
+
+.site-nav {
+    float: right;
+    line-height: 48px;
+    width:215px
+}
+</style>
   </head>
   <body>
-    <div class="site-description">
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-    </div>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="site-header">
+
+      <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">02806 social data anaysis and visualization</a>
+          <nav class="site-nav">
+            <label for="nav-trigger">
+                         Chenxi Cai & Qiwen Huang
+            </label>
+          </nav>
+      </div>
+    </header> 
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+
+  
     </main>
   </body>
 </html>
