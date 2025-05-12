@@ -44,55 +44,82 @@
  * Site header
  */
 .site-header {
-  position: relative;
-  width: 100%;
-  height: 55px;
-  line-height: 1.5 * 16 * 2.25;
-  background-color: #ffffff;
-  border-top: 5px solid #818181;
-  border-bottom: 1px solid #818181;
-}
-.site-header .wrapper {
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 30px;
-    padding-left: 30px;
-    height: 40px
-}
-.site-header .wrapper .site-title 
- {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 47px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-    color: black;
-    font-size: 23px
-}
-
-.site-nav {
-    float: right;
-    line-height: 48px;
-    width:300px
-}
+      position: relative;
+      width: 100%;
+      height: 55px;
+      line-height: 1.5 * 16 * 2.25;
+      background-color: #ffffff;
+      border-top: 5px solid #818181;
+      border-bottom: 1px solid #818181;
+    }
+    .site-header .wrapper {
+      max-width: 900px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 40px;
+    }
+    .site-header .wrapper .site-title {
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 47px;
+      letter-spacing: -1px;
+      margin-bottom: 0;
+      float: left;
+      color: black;
+      font-size: 23px;
+    }
+    .site-nav {
+      float: right;
+      line-height: 48px;
+      width: 300px;
+    }
+    .github-link {
+      position: absolute;
+      left: 10px;
+      top: 45%;
+      transform: translateY(-50%);
+    }
+    .github-link a {
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+      text-decoration-color: #000;
+      text-underline-offset: 5px;
+    }
+    .github-link img {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .github-link span {
+      vertical-align: middle;
+      color: #000;
+    }
 </style>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="site-header">
-
-      <div class="wrapper">
-        <a class="site-title" rel="author" href="/">02806 social data anaysis and visualization</a>
-          <nav class="site-nav">
-            <label for="nav-trigger">
-                         Chenxi Cai & Qiwen Huang & Xinya Lu
-            </label>
-          </nav>
-      </div>
-    </header> 
+   
+    <div class="wrapper">
+      <a class="site-title" rel="author" href="https://github.com/Ryanaco/ryan_aco.github.io">02806 social data anaysis and visualization</a>
+      <nav class="site-nav">
+        <label for="nav-trigger">
+          Chenxi Cai & Qiwen Huang & Xinya Lu
+        </label>
+      </nav>
+    </div>
+     <div class="github-link">
+      <a href="https://github.com/Ryanaco/ryan_aco.github.io">
+        <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;">
+        <span style="vertical-align: middle; margin-left: 3px; color: #000;">Explainer Notebook</span>
+      </a>
+    </div>
+  </header>
 
     <main id="content" class="main-content" role="main">
       <h1 id="is-nyc-safe-for-your-trip-shootings-weather-and-what-to-know"><strong>Is NYC Safe for Your Trip? Shootings, Weather, and What to Know</strong></h1>
